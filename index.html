@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+	<meta charset = "UTF-8">
+	<meta name = "viewport" content = "width = devive-width, initial-scale = 1.0">
+	<title>Meilingdle</title>
+	<link rel = "stylesheet" href = "./style.css">
+</head>
+
+<body>
+	<h1>Meilingdle</h1>
+
+	<div id="board"></div>
+	<div id="keyboard">
+		<div class="keyrow">
+			<button class = "tile key" data-id="meiling"> <img src = "./lings/meiling.webp" alt = "Meiling"> </button>
+			<button class = "tile key" data-id="meilingfear"> <img src = "./lings/meilingfear.webp" alt = "MeilingFear"> </button>
+			<button class = "tile key" data-id="meilingblush"> <img src = "./lings/meilingblush.webp" alt = "MeilingBlush"> </button>
+			<button class = "tile key" data-id="mwaaling"> <img src = "./lings/mwaaling.webp" alt = "Mwaaling"> </button>
+		</div>
+		<div class="keyrow">
+			<!-- <button class = "tile key hidden" data-id="restart" id="restart-button"> <img src = "./lings/restart.webp" alt = "Restart"> </button> -->
+			<button class = "tile key" data-id="submit"> <img src = "./lings/submit.webp" alt = "Submit"> </button>
+			<button class = "tile key" data-id="backspace"> <img src = "./lings/backspace.webp" alt = "Backspace"> </button>
+		</div>
+	</div>
+	<div id="links">
+		<a class="link" href="?" data-mode = "dailystandard">Daily Standard</a>
+		<a class="link" href="?mode=dailyhard" data-mode = "dailyhard">Daily Hard</a>
+		<a class="link" href="?mode=randomstandard" data-mode = "randomstandard">Random Standard</a>
+		<a class="link" href="?mode=randomhard" data-mode = "randomhard">Random Hard</a>
+	</div>
+
+	<div id="results" class="popup hidden">
+		<div class="popup-box tile">
+			<h2 id="result-title"></h2>
+			<p id="result-text" style="white-space: pre-line;"></p>
+			<div class="keyrow">
+			    <button id="share-btn" class="tile result-button">Share</button>
+			    <button id="close-btn" class="tile result-button">Close</button>
+			</div>
+			<p id="copy-result"></p>
+		</div>
+	</div>
+
+	<script src="./script.js" defer></script>
+</body>
+
+</html>
